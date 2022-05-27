@@ -1,0 +1,138 @@
+.root{
+    background: #E5E5E5;
+}
+
+.header_foto{
+    background: #E5E5E5;
+
+}
+.element{
+     padding-left: 1px;
+     padding-right: 1px;
+}
+.profile_name{
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 120px;
+    height: 12px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+}
+.profile_email{
+    width: 120px;
+    height: 12px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8D8D8D;
+}
+.profile_cover{
+    background: #E5E5E5;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+}
+.name_email{
+    display: flex;
+
+    flex-direction: column;
+}
+.foto_name_email{
+    display: flex;
+}
+.profile_photo{
+    padding: 10px;
+    }
+.minus{
+    margin: 0;
+    width: 17px;
+    height: 17px;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-bottom: 7px;
+    padding-right: 2px;
+
+}
+.plus{
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-bottom: 7px;
+    padding-right: 2px;
+}
+.minus_plus{
+    display: flex;
+}
+.price{
+    width: 71px;
+    height: 14px;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 0;
+    padding-bottom: 7px;
+    padding-right: 2px;
+}
+.price_minus_plus{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .header_foto{
+        width: 91vw;
+        height: 62vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header{
+        display: grid;
+         grid-template-columns:  1fr;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .header_foto{
+        width: 320px;
+    }
+    .element{
+        padding-left: 54px;
+        padding-right: 54px;
+      /*  grid-template-columns:  1fr 1fr;*/
+       /* display: grid;*/
+    }
+}
+
+@media screen and (min-width:999px) {
+    .header{
+         grid-template-columns:  1fr 1fr;
+        padding-left: 170px;
+        padding-right: 150px;
+    /*    display: flex;*/
+        flex-wrap: wrap;
+        display: grid;
+    }
+
+    .header_foto{
+        padding-right: 20px;
+        width: 320px;
+        padding-right: 20px;
+    }
+
+    .element{
+
+    }
+}
